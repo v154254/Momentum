@@ -6,4 +6,5 @@
 ## Stack
 * HTML
 * CSS
+* JavaScript
 * REST API
