@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/owfont-regular.css">
+    <link rel="stylesheet" href="css/icono.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Momentum (going for me)</title>
+    <link rel="icon" href="assets/svg/favicon.ico">
+</head>
+<!-- all used artwork are courtesy of:
+https://steemit.com/pixelart/@loomy/pixel-art-items-i-am-using-in-my-current-project
+https://www.flaticon.com/ru/free-icons/
+https://saeedalipoor.github.io/icono/
+This is non-commercial work. All artwork fully belongs to their authors. -->
+<body>
+    <header class="header">
+        <div class="player-container">
+            <div class="player">
+                <div class="player-inside-wrapper">
+                    <div class="player-control">
+                        <button class="play-prev player-icon"></button>
+                        <button class="play player-icon"></button>
+                        <button class="play-next player-icon"></button>
+                    </div>
+                    <div class="volume-icon icono-volumeMedium">
+                    </div>
+                    <input type="range" class="volume-slider">
+                </div>
+                <div class="second-player-wrapper">
+                    <div class="currently-playing">
+                    </div>
+                    <div class="track-time">
+                        <div class="current">0:00</div>
+                        <div class="divider">/</div>
+                        <div class="length"></div>
+                    </div>
+                </div>
+                <input type="range" class="timeline">
+            </div>
+            <ul class="play-list"></ul>
+        </div>
+        <div class="weather">
+            <input type="text" class="city">
+            <div class="weather-icon owf"></div>
+            <div class="weather-error"></div>
+            <div class="description-container">
+                <span class="temperature"></span>
+                <span class="weather-description"></span>
+            </div>
+            <div class="wind"></div>
+            <div class="humidity"></div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="slider-icons">
+            <div class="slide-prev slider-icon"></div>
+            <div class="slide-next slider-icon"></div>
+        </div>
+        <time class="time"></time>
+        <date class="date"></date>
+        <div class="greetings-container">
+            <span class="greeting"></span>
+            <input type="text" class="name" placeholder="[Enter name]">
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="settings">
+            <div class="choose-language">
+                Choose your language / Выберите язык / Абярыце мову
+            </div>
+            <div class="languages">
+                <div class="english"><image src="assets/svg/en.png" alt="en-icon"> English</div>
+                <div class="russian"><image src="assets/svg/ru.png" alt="ru-icon"> Русский</div>
+                <div class="belaurusian"><image src="assets/svg/by.png" alt="by-icon"> Беларуская</div>
+            </div>
+            <div class="choose-background">Choose background source
+            </div>
+            <div class="background-source">
+                <button class="background-button button-git">Github</button>
+                <button class="background-button button-unsplash">Unsplash</button>
+                <button class="background-button button-flickr">Flickr</button>
+            </div>
+            <input type="text" class="background-tags" placeholder="Choose tags for images">
+            <div class="hideorview">
+                <div><input type="checkbox" name="time" id="time" class="checkTime" checked><label class="hideTime" for="time"> Enable time</label></div>
+                <div><input type="checkbox" name="date" id="date" class="checkDate" checked><label class="hideDate" for="date"> Enable date</label></div>
+                <div><input type="checkbox" name="greeting" id="greeting" class="checkGreeting" checked><label class="hideGreet" for="greeting"> Enable greeting</label></div>
+                <div><input type="checkbox" name="quote" id="quote" class="checkQuote" checked><label class="hideQuote" for="quote"> Enable quote of day</label></div>
+                <div><input type="checkbox" name="weather" id="weather" class="checkWeather" checked><label class="hideWeather" for="weather"> Enable weather forecast</label></div>
+                <div><input type="checkbox" name="audioplayer" id="audioplayer" class="checkAudio" checked><label class="hidePlayer" for="audioplayer"> Enable audioplayer</label></div>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+        <div class="settings-button">
+            <img src="assets/svg/settings.svg" alt="settings-icon" height="32" width="32">
+            <div class="settings-text">
+                Settings
+            </div>
+        </div>
+        <div class="quote-container">
+            <button class="change-quote"></button>
+            <div class="quote"></div>
+            <div class="author"></div>
+        </div>
+        <div class="credits">
+            <div class="RSSchool">
+                <a href="https://rs.school/js/">
+                    <img src="assets/svg/rs_school_js.svg" alt="RSSchool" height="64" width="64">
+                </a>
+            </div>
+            <div class="year">
+                2023
+            </div>
+            <div class="github">
+                <a href="https://github.com/v154254">
+                    <img src="assets/svg/github-logo.svg" alt="github">
+                </a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
